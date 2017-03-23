@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Triangle Tracker</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.js"></script>
+  <script src="js/app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1>Triangle Tracker</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h6>Please enter length of all sides of the triangle:: </h6>
+        <form id="triangle">
+          <div class="form-group row">
+            <label for="name" class="col-2 col-form-label">Side 1: </label>
+            <div class="col-10">
+            <input class="form-control" type="number"  id="line1">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="name" class="col-2 col-form-label">Side 2: </label>
+            <div class="col-10">
+            <input class="form-control" type="number"  id="line2">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="name" class="col-2 col-form-label">Side 3: </label>
+            <div class="col-10">
+            <input class="form-control" type="number"  id="line3">
+            </div>
+          </div>
+         <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <div class="shape equil">
+          <h3>Equilateral: All sides are equal</h3>
+          <img src="img/shape1.png" alt="">
+        </div>
+        <div class="shape isos">
+          <h3>Isosceles: Exactly 2 sides are equal.</h3>
+          <img src="img/shape2.png" alt="">
+        </div>
+        <div class="shape scal">
+          <h3>Scalene: No sides are equal.</h3>
+          <img src="img/shape3.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
